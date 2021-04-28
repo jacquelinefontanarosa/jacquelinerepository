@@ -7,71 +7,188 @@
 		
 
 
-		<!-- questo sotto è il link al css di bootstrap -->
+		<!-- questo sotto è il link al css di bootstrap + css delle icone bootstrap-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 	</head>
 	<body>
 		<div class="container-fluid">
-			<h1>Navbar</h1>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			  <a class="navbar-brand" href="#">Navbar scroll</a>
+			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
+			  <a class="navbar-brand" href="#">Attestazioni dantesche</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarScroll">
 			    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Link</a>
+			        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-			          Link
-			        </a>
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Catalogo</a>
 			        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-			          <li><a class="dropdown-item" href="#">Action</a></li>
-			          <li><a class="dropdown-item" href="#">Another action</a></li>
+			          <li><a class="dropdown-item" href="#">Beni librari</a></li>
 			          <li><hr class="dropdown-divider"></li>
-			          <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          <li><a class="dropdown-item" href="#">Beni artistici</a></li>
+			          <li><hr class="dropdown-divider"></li>
+			          <li><a class="dropdown-item" href="#">Beni multimediali</a></li>
 			        </ul>
+			      </li> 
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Temi</a>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link" href="#">Linea temporale</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+			        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Credits of DH class</a>
 			      </li>
 			    </ul>
 			    <form class="d-flex">
 			      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-success" type="submit">Search</button>
+			      <button class="btn btn-outline-success" type="submit">Cerca</button>
 			    </form>
 			  </div>
 			</nav>
 
 		</div>
-		<div class="container">
+		<div class="container-fluid" style="background-color: #009999; padding: 20px">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Attestazioni dantesche</h2>
+					<h2 style="text-align: center">Catalogo|Lista</h2>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid" style="margin-top: 20px">
 			<div class="row">
-				<div class="col-2">Colonna 1</div>
-				<div class="col-9">Colonna 2
+				<div class="col-2">
 					<div class="dropdown">
-					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Dropdown button
-					  </button>
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordina per</button>
 					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					    <a class="dropdown-item" href="#">Action</a>
-					    <a class="dropdown-item" href="#">Another action</a>
-					    <a class="dropdown-item" href="#">Something else here</a>
+					    <a class="dropdown-item" href="#">Categoria</a>
+					    <a class="dropdown-item" href="#">Data</a>
+					    <a class="dropdown-item" href="#">Ordine alfabetico</a>
 					  </div>
+
+						
+						<div class="btn-group dropright">
+						  <button type="button" class="btn btn-secondary">
+						    Filtri
+						  </button>
+						  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="sr-only">Toggle Dropright</span>
+						  </button>
+						  <div class="dropdown-menu">
+						    <div class="form-check">
+						     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						 	 <label class="form-check-label" for="defaultCheck1">
+						 	   Manoscritti
+						 	 </label>
+						 	</div>
+						 	<div class="form-check">
+						     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+						 	 <label class="form-check-label" for="defaultCheck2">
+						 	   Dipinti e sculture
+						 	 </label>
+						 	</div>
+						 	<div class="form-check">
+						     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+						 	 <label class="form-check-label" for="defaultCheck3">
+						 	   Audio
+						 	 </label>
+						 	</div>
+						 	<div class="form-check">
+						     <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+						 	 <label class="form-check-label" for="defaultCheck4">
+						 	   Video
+						 	 </label>
+						 	</div>
+						 	<div class="form-check">
+						     <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+						 	 <label class="form-check-label" for="defaultCheck5">
+						 	   Altro
+						 	 </label>
+							</div>
+						  </div>
+					      
+						</div>
+
+					  <h1><i class="bi bi-suit-heart-fill"></i></h1>
 					</div>
 				</div>
-				<div class="col-1">Colonna 3</div>
+				<div class="col-9">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Tutti</a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link" id="books-tab" data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Beni librari</a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">Beni artistici</a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Beni multimediali</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+					  <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">Tutti i beni correlati a Dante Alighieri</div>
+					  <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">Tutti i beni librari</div>
+					  <div class="tab-pane fade" id="art" role="tabpanel" aria-labelledby="art-tab">Tutti i beni artistici</div>
+					  <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">Tutti i beni multimediali</div>
+					</div>
+					
+					<div class="container" style="border:transparent; background-color:lightgreen; margin-top: 10px">
+						<div class="row" style="padding: 10px">
+							<div class="col-md-4">
+								<div class="card">
+								  <img src="statua-dante.jpg" class="card-img-top">
+								  <div class="card-body">
+								    <h5 class="card-title">Dante Alighieri</h5>
+								    <p class="card-text">Autore: Martinez Gaetano (1892 - 1951)</p>
+								    <p class="card-text">Supporto: statua</p>
+								    <p class="card-text">Data: XX secolo</p>
+									<p class="card-text">Ente: MetsTeca</p>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+								  <img src="congresso-dante.jpg" class="card-img-top">
+								  <div class="card-body">
+								    <h5 class="card-title">Taranto per il 31. congresso della Dante Alighieri : Taranto 22, 23, 24 ottobre 1926, Reggio Calabria 25 ottobre 1926</h5>
+								    <p class="card-text">Supporto: Beni librari</p>
+								    <p class="card-text">Data: XX secolo</p>
+									<p class="card-text">Ente: Internet Culturale / CulturaItalia</p>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+								  <img src="cinegiornale-dante.jpg" class="card-img-top">
+								  <div class="card-body">
+								    <h5 class="card-title">Italia - Una "Divina Commedia" illustrata con i capolavori della pittura mondiale</h5>
+								    <p class="card-text">Supporto: Newsreel Cinegiornale</p>
+									<p class="card-text">Ente: Istituto Luce - Cinecittà</p>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card">
+								  <img src="ritratto-dante.jpg" class="card-img-top">
+								  <div class="card-body">
+								    <h5 class="card-title">Ave Maria</h5>
+								    <p class="card-text">Autore: Verdi, Giuseppe <1813-1901></p>
+								    <p class="card-text">Supporto: musica, http://metadataregistry.org/concept/show/id/536.html</p>
+									<p class="card-text">Ente: Internet Culturale</p>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1">Guida</div>
 			</div>
 		</div>
 
